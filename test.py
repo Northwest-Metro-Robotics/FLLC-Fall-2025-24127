@@ -1,6 +1,6 @@
 loop_counter = 1
 task_list = []
-
+# makes it go forward 10 times 
 while loop_counter <= 10:
     # Run motor actions
     WHEEL_ONE.run_angle(MOTOR_SPEED, 400)
@@ -17,7 +17,7 @@ while loop_counter <= 10:
     else:
         task_list.append(list_item)
         print("Current list:", task_list)
-
+          # adds one to the loop couter until it reaches 10 and then it stops 
     loop_counter += 1
 
 
