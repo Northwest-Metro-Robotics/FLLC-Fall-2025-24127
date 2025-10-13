@@ -5,8 +5,8 @@ from pybricks.robotics import DriveBase
 
 # Initialize hub and motor
 HUB = PrimeHub()
-WHEEL_ONE = Motor(Port.B, Direction.COUNTERCLOCKWISE)
-WHEEL_TWO = Motor(Port.F, Direction.CLOCKWISE)
+WHEEL_ONE = Motor(Port.F, Direction.COUNTERCLOCKWISE)
+WHEEL_TWO = Motor(Port.B, Direction.CLOCKWISE)
 MOTOR_ONE = Motor(Port.C)
 MOTOR_TWO = Motor(Port.D)
 

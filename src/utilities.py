@@ -1,8 +1,12 @@
+from pybricks.hubs import PrimeHub
 from pybricks.parameters import Port, Stop
 from pybricks.pupdevices import Motor
 from pybricks.tools import StopWatch, wait
 
-from src.constants import MOTOR_ONE, MOTOR_TWO
+from src.constants import DB, MOTOR_ONE, MOTOR_TWO
+
+drive = DB
+hub = PrimeHub()
 
 
 def home_motor(
@@ -68,3 +72,14 @@ def log(msg: str):
         print(msg)
     except Exception:
         pass
+
+def zero_gyro():
+    #Set speed to slow
+    drive.settings(straight_speed=50,straight_acceleration=400,turn_rate=480,turn_acceleration=600)
+    #Backup a little and stop
+    drive.straight(-30,then=Stop.BRAKE)
+    wait(500)
+    #Reset GYRO heading
+    hub.imu.reset_heading(0)
+    #Set speed back to medium
+    drive.settings(straight_speed=300,straight_acceleration=400,turn_rate=280,turn_acceleration=400)

@@ -1,12 +1,13 @@
+
 loop_counter = 1
 task_list = []
 # makes it go forward 10 times 
-while loop_counter <= 10:
+while loop_counter <= 10:     
     # Run motor actions
     WHEEL_ONE.run_angle(MOTOR_SPEED, 400)
-    WHEEL_TWO.run_angle(MOTOR_SPEED, 400)
+    WHEEL_TWO.run_angle(MOTOR_SPEED, -400)
     MOTOR_ONE.run_angle(MOTOR_SPEED, 600)
-    MOTOR_TWO.run_angle(MOTOR_SPEED, 600)
+    MOTOR_TWO.run_angle(MOTOR_SPEED, -600)
 
     # Get user input
     print("Enter a task:")
