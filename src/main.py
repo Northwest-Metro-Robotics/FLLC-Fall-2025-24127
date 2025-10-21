@@ -71,14 +71,20 @@ def Run3():
       
 
 def Run4():
-    #zero_gyro()
+    #zero_gyro(
     #shipreck
-    # Line up on left at 7.5
-
-
-
-    drive.straight(730,then=Stop.COAST_SMART)
-    drive.straight(-50,then=Stop.COAST_SMART)
+    # Line up on left 
+    drive.straight(65,then=Stop.COAST_SMART)
+    drive.turn(85)
+    drive.straight(180)
+    arm2.run_angle(200,-90)
+    drive.straight(-100)
+    drive.turn(-90)
+    drive.straight(125)
+    drive.turn(90)
+    arm2.run_angle(200,90)
+    drive.straight(245)
+    drive.straight(-700)
 
 def Run5():       #liam revealing the map bc he got a map from a villager
    # zero_gyro()
