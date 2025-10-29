@@ -1,5 +1,3 @@
-
-
 from pybricks.hubs import PrimeHub
 from pybricks.iodevices import XboxController
 from pybricks.parameters import Button, Color, Direction, Port, Side, Stop
@@ -66,27 +64,30 @@ def Run3():
 #     arm2.run_angle(400,180,then=Stop.COAST_SMART)
 #     drive.straight(80,then=Stop.COAST)
 #     arm2.run_angle(400,-180,then=Stop.COAST_SMART)
+    arm2.run_angle(100,45)
     drive.straight(750,then=Stop.COAST_SMART)
-    drive.straight(-250,then=Stop.COAST_SMART)
-      
-
-def Run4():
-    #zero_gyro(
-    #shipreck
-    # Line up on left 
-    drive.straight(65,then=Stop.COAST_SMART)
+    drive.straight(-750,then=Stop.COAST_SMART)
+    drive.straight(-30)
+    drive.settings(straight_speed=300,straight_acceleration=400,turn_rate=280,turn_acceleration=200)
+    drive.straight(40,then=Stop.COAST_SMART)
     drive.turn(85)
-    drive.straight(180)
-    arm2.run_angle(200,-90)
-    drive.straight(-100)
+    drive.straight(385)
+    arm2.run_angle(205,-90)
+    drive.straight(-110)
     drive.turn(-90)
-    drive.straight(125)
-    drive.turn(90)
-    arm2.run_angle(200,90)
-    drive.straight(245)
+    drive.straight(130)
+    drive.turn(85)
+    arm2.run_angle(210,95)
+    drive.straight(350)
     drive.straight(-700)
 
-def Run5():       #liam revealing the map bc he got a map from a villager
+def Run4():
+    #stuff
+    raise NotImplementedError
+
+
+def Run5():       
+    #lia revealing the map bc he got a map from a villager
    # zero_gyro()
     #drive.straight(640,then=Stop.COAST)
     #drive.turn(-45,then=Stop.COAST_SMART)
@@ -95,7 +96,7 @@ def Run5():       #liam revealing the map bc he got a map from a villager
     arm2.run_angle(200, 20)
     drive.straight(300, then=Stop.COAST)
     drive.straight(-50, then=Stop.COAST)
-    arm2.run_angle(200, -20)
+    arm2.run_angle(200, - 20)
     drive.straight(20, then=Stop.COAST)
     arm2.run_angle(200, 20)
     drive.straight(-20, then=Stop.COAST)
