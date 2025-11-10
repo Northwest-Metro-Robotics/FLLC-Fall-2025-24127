@@ -1,3 +1,7 @@
+
+
+
+
 from pybricks.hubs import PrimeHub
 from pybricks.iodevices import XboxController
 from pybricks.parameters import Button, Color, Direction, Port, Side, Stop
@@ -46,17 +50,32 @@ def zero_gyro():
 
 def Run2():    #mincart from MINCRAFT!!!!!
     zero_gyro()
-    drive.straight(770,then=Stop.COAST)
+    arm2.run_angle(500,100,then=Stop.COAST_SMART)
+    drive.straight(780,then=Stop.COAST_SMART)
     drive.turn(90,then=Stop.COAST_SMART)
-    drive.straight(345,then=Stop.COAST)
+    arm2.run_angle(500,-100,then=Stop.COAST_SMART)
+    drive.straight(150,then=Stop.COAST_SMART) # place an # after if dosent work
+#    drive.straight(345,then=Stop.COAST_SMART)
+#    drive.turn(-90,then=Stop.COAST_SMART)
+    arm2.run_angle(500,190,then=Stop.HOLD)
+    wait(200)
+    arm2.run_angle(250,-190,then=Stop.COAST_SMART)
+    drive.straight(-100,then=Stop.COAST_SMART)
+    arm2.run_angle(500,100,then=Stop.COAST_SMART)
     drive.turn(-90,then=Stop.COAST_SMART)
-    arm2.run_angle(500,200,then=Stop.COAST_SMART)
-    drive.straight(40,then=Stop.COAST_SMART)
-    #I LIKE TRAINS
+    drive.straight(-50,then=Stop.COAST_SMART)
+    drive.turn(-45,then=Stop.COAST_SMART)
+    drive.straight(-100,then=Stop.COAST_SMART)
+    arm2.run_angle(500,-65,then=Stop.COAST_SMART)
+    drive.straight(200,then=Stop.COAST_SMART) #bit wrong?
+    arm2.run_angle(500,100,then=Stop.COAST_SMART)
+    drive.straight(-50,then=Stop.COAST_SMART)
+    drive.turn(45,then=Stop.COAST_SMART)
+    drive.straight(-700,then=Stop.COAST_SMART)
+    #    drive.straight(40,then=Stop.COAST_SMART)
+    #I LIKE YO CUT G *slap* AAAAAAAAAAHHHHHHHHH
 
 def Run3():
-    # whatevr th
-    # Line up bottom right 9
     zero_gyro()
 #     drive.straight(650,then=Stop.COAST)
 #     drive.turn(-90,then=Stop.COAST_SMART)
@@ -75,19 +94,83 @@ def Run3():
     arm2.run_angle(205,-90)
     drive.straight(-110)
     drive.turn(-90)
-    drive.straight(130)
+    drive.straight(85)
     drive.turn(85)
     arm2.run_angle(210,95)
     drive.straight(350)
     drive.straight(-700)
 
 def Run4():
-    #stuff
-    raise NotImplementedError
+    zero_gyro()
+    # tip the scales and whats on sale? 
+    # start on second thick line from the left
+    arm2.run_angle(100,130)
+    # farward 290
+    drive.straight (290)
+    # turn 90 
+    drive.turn(90)
+    # farward 690 
+    drive.straight(735)
+    # turn -90 
+    drive.turn(-90)
+    # farward 340
+    drive.straight(340)
+    # turn 90 
+    drive.turn(60)
+    drive.straight(20)
+    #arm2.run_angle(100,130)
+    #drive.straight(-50)
+    # lower the ar
+    #m down
+    arm2.run_angle(100,-90) 
+    # lift up arm
+    arm2.run_angle(100,90)
+    # go back
+    drive.straight(-75)
+    drive.turn(-45)
+    drive.straight(250)
+    drive.turn(45)
+    drive.straight(90)
+    drive.turn(45)
+    drive.straight(120)
+    drive.turn(15) 
+    drive.straight(140)
+    drive.straight(75)
+    drive.turn(-45)
+    drive.straight(150)
+    drive.turn(70)
+    drive.straight(710)
 
+    # # turn -45 
+    # drive.straight(30)
+    # drive.turn(-45)
+    # # farward 250
+    # drive.straight(200)
+    # # turn 90 
+    # drive.turn(90)
+    # # farward 120
+    # drive.straight(120)
+    # # back 30
+    # drive.straight(-30)
+    # # turn -20 
+    # drive.turn(-20)
+    # # farward 260 
+    # drive.straight(260)
+    # # turn 60 
+    # drive.turn(60)
+    # # farward 350 
+    # drive.straight(350)
+    # # turn 90 
+    # drive.turn(90)
+    # # farward 250  
+    # drive.straight(250)
+    # # lower the arm 
+    # arm2.run_angle(100,90)
+    # # tirn 180
+    # drive.turn(180)
 
 def Run5():       
-    #lia revealing the map bc he got a map from a villager
+    #liam revealing the map bc he got a map from a villager heheheheh
    # zero_gyro()
     #drive.straight(640,then=Stop.COAST)
     #drive.turn(-45,then=Stop.COAST_SMART)
@@ -130,9 +213,9 @@ def Run7():
 
 #Main Program
 while True:
-        menu("1")
-        menu("2")
-        menu("3")
-        menu("4")
-        menu("5")
-        menu("X")
+    menu("1")
+    menu("2")
+    menu("3")
+    menu("4")
+    menu("5")
+    menu("X")
