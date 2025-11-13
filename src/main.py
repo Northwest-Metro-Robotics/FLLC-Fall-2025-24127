@@ -48,31 +48,33 @@ def zero_gyro():
     #Set speed back to medium
     drive.settings(straight_speed=300,straight_acceleration=400,turn_rate=280,turn_acceleration=400)
 
-def Run2():    #mincart from MINCRAFT!!!!!
+def Run2():    #mincart from MINCRAFT!!!!!oh wait im low on mattirials lets go mining:D
     zero_gyro()
     arm2.run_angle(500,100,then=Stop.COAST_SMART)
-    drive.straight(780,then=Stop.COAST_SMART)
+    drive.straight(750,then=Stop.COAST_SMART)
+    drive.settings(straight_speed=300,straight_acceleration=400,turn_rate=200,turn_acceleration=200)
     drive.turn(90,then=Stop.COAST_SMART)
+    drive.settings(straight_speed=300,straight_acceleration=400,turn_rate=280,turn_acceleration=400)
     arm2.run_angle(500,-100,then=Stop.COAST_SMART)
-    drive.straight(150,then=Stop.COAST_SMART) # place an # after if dosent work
+    drive.straight(150,then=Stop.COAST_SMART)
 #    drive.straight(345,then=Stop.COAST_SMART)
 #    drive.turn(-90,then=Stop.COAST_SMART)
-    arm2.run_angle(500,190,then=Stop.HOLD)
-    wait(200)
-    arm2.run_angle(250,-190,then=Stop.COAST_SMART)
+    arm2.run_angle(250,175,then=Stop.COAST_SMART)
+    wait(1500) #add breack... HAVE YOU EVER LOST YOUR EYES? WELL COMES EYES AND BUYS(TM) AND GET SOME EYES OF ENDER "wow my  sight is restored!"-happy customer
+    arm2.run_angle(250,-165,then=Stop.COAST_SMART)
     drive.straight(-100,then=Stop.COAST_SMART)
-    arm2.run_angle(500,100,then=Stop.COAST_SMART)
+    arm2.run_angle(500,90,then=Stop.COAST_SMART)
     drive.turn(-90,then=Stop.COAST_SMART)
     drive.straight(-50,then=Stop.COAST_SMART)
     drive.turn(-45,then=Stop.COAST_SMART)
     drive.straight(-100,then=Stop.COAST_SMART)
     arm2.run_angle(500,-65,then=Stop.COAST_SMART)
-    drive.straight(200,then=Stop.COAST_SMART) #bit wrong?
+    drive.straight(245,then=Stop.COAST_SMART) #bit wrong?
     arm2.run_angle(500,100,then=Stop.COAST_SMART)
     drive.straight(-50,then=Stop.COAST_SMART)
     drive.turn(45,then=Stop.COAST_SMART)
-    drive.straight(-700,then=Stop.COAST_SMART)
-    #    drive.straight(40,then=Stop.COAST_SMART)
+    drive.straight(-800,then=Stop.COAST_SMART)
+
     #I LIKE YO CUT G *slap* AAAAAAAAAAHHHHHHHHH
 
 def Run3():
